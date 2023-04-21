@@ -1,0 +1,121 @@
+:root {
+    --green-vdark: #02362d;
+    --green-dark: #065143;
+    --green-mid: #237459;
+    --green-light: #70B77E;
+    --cyan-mid: #129490;
+    --pink-mid: #D8829D;
+    --white: #FFFFFF;
+    --white-overlay: #FFFFFFDD;
+    --shadow: #33333388;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid blue;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--white-overlay);
+    background: var(--green-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    padding: 32px 8px 8px 8px;;
+}
+
+h1 {
+    font-size: 48px;
+    padding-bottom: 14px;
+}
+
+h2 {
+    font-size: 20px;
+    padding-bottom: 48px;
+    font-weight: 300;
+}
+
+.frame {
+    display:block;
+    padding: 20px;
+    background-color: var(--green-mid);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px var(--shadow);
+    box-shadow: inset 0px 0px 2px 0px var(--shadow);
+}
+
+#screen {
+    display: flex;
+    margin: 5px;
+    padding: 0px 10px;
+    height: 70px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: right;
+    background-color: var(--green-vdark);
+    border-radius: 4px;
+    font-size: 48px;
+    letter-spacing: 0.2rem;
+}
+
+.buttons-panel {
+    display:flex;
+}
+
+.buttons-left, .buttons-right{
+    display: block;
+}
+
+.buttons-left {
+    margin-right: 10px;
+}
+
+.buttons-row {
+    display:flex;
+}
+
+.button {
+    width:100px;
+    height: 50px;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 0px 0px var(--shadow);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.button:hover {
+    opacity: 90%;
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 0px 0px var(--shadow);
+}
+
+.large-button {
+    flex: auto;
+}
+
+.operator {
+    background-color: var(--cyan-mid);
+}
+
+.numeral {
+    background-color: var(--green-light);
+}
+
+.special {
+    background-color: var(--pink-mid);
+}
